@@ -1,4 +1,5 @@
 # CoderDojo Twenty-Two WordPress Theme
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=kinsaledojo_coderdojotwentytwo&metric=bugs)](https://sonarcloud.io/summary/new_code?id=kinsaledojo_coderdojotwentytwo)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=kinsaledojo_coderdojotwentytwo&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=kinsaledojo_coderdojotwentytwo)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=kinsaledojo_coderdojotwentytwo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=kinsaledojo_coderdojotwentytwo)
