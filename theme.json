@@ -203,7 +203,7 @@
                 {
                   "fontFamily": "League Gothic",
                   "fontStyle": "normal",
-							    "fontWeight": "400",
+                  "fontWeight": "400",
                   "src": [
                     "file:./assets/fonts/league-gothic/LeagueGothic-CondensedRegular.woff2"
                   ]
@@ -475,16 +475,16 @@
       },
       "core/site-title": {
         "elements": {
-					"link": {
+          "link": {
             "color": {
               "text": "var(--wp--preset--color--black)"
             },
-						"typography": {
-							"textDecoration": "none",
+            "typography": {
+              "textDecoration": "none",
               "fontSize": "36px"
-						}
-					}
-				},
+            }
+          }
+        },
         "spacing": {
           "padding": {
             "left": "6px",
@@ -502,7 +502,7 @@
           "radius": "0.5rem"
         }
       }
-		},
+    },
     "color": {
       "text": "var(--wp--preset--color--coderdojo-black)"
     },
@@ -564,14 +564,14 @@
   "customTemplates": [],
   "templateParts": [
     {
-			"area": "header",
-			"name": "header",
-			"title": "Header"
-		},
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
-		}
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Footer"
+    }
   ]
 }
