@@ -32,7 +32,7 @@ if (!function_exists('coderdojotwentytwoSupport')) :
 
 endif;
 
-add_action('after_setup_theme', 'twentytwentytwoSupport');
+add_action('after_setup_theme', 'coderdojotwentytwoSupport');
 
 /**
  * POST SUPPORT
@@ -46,9 +46,9 @@ function coderdojoPostSupport()
 
 }
 
-add_action('after_setup_theme', 'coderdojo_post_support');
+add_action('after_setup_theme', 'coderdojoPostSupport');
 
-if (!function_exists('twentytwentytwo_styles')) :
+if (!function_exists('coderdojotwentytwoStyles')) :
 
     /**
      * Enqueue styles.
@@ -57,7 +57,7 @@ if (!function_exists('twentytwentytwo_styles')) :
      * @since Twenty Twenty-Two 1.0
      *
      */
-    function twentytwentytwoStyles()
+    function coderdojotwentytwoStyles()
     {
         // Register theme stylesheet.
         $theme_version = wp_get_theme()->get('Version');
@@ -77,7 +77,7 @@ if (!function_exists('twentytwentytwo_styles')) :
 
 endif;
 
-add_action('wp_enqueue_scripts', 'twentytwentytwoStyles');
+add_action('wp_enqueue_scripts', 'coderdojotwentytwoStyles');
 
 // Add block patterns
 //require get_template_directory() . '/inc/block-patterns.php';
