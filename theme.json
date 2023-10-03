@@ -4,8 +4,8 @@
   "settings": {
     "useRootPaddingAwareAlignments": true,
     "layout": {
-      "contentSize": "742px",
-      "wideSize": "1070px"
+      "contentSize": "750px",
+      "wideSize": "1300px"
     },
     "color": {
       "palette": [
