@@ -6,8 +6,9 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"5vh","right":"5vh"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:60px;padding-right:5vh;padding-bottom:60px;padding-left:5vh"><!-- wp:heading {"textAlign":"center"} -->
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+    <!-- wp:heading {"textAlign":"center"} -->
     <h2 class="wp-block-heading has-text-align-center"></h2>
     <!-- /wp:heading -->
 
@@ -58,4 +59,11 @@
             <!-- /wp:paragraph --></div>
         <!-- /wp:column --></div>
     <!-- /wp:columns --></div>
+
+    <!-- wp:buttons -->
+    <div class="wp-block-buttons">
+        <!-- wp:button /-->
+    </div>
+    <!-- /wp:buttons -->
+</div>
 <!-- /wp:group -->

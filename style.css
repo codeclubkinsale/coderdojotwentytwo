@@ -24,6 +24,65 @@ html {
   font-size:clamp(1em, 3vmin, 1.25em)
 }
 
+:where(body .is-layout-flow) > * {
+  margin-block-start: 0;
+}
+
+@media (max-width: 600px) {
+
+  .wp-block-media-text__media img,
+  .wp-block-media-text__media video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-top: 30px;
+  }
+
+  .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .wp-block-buttons > .wp-block-button {
+    flex-basis: 100%;
+  }
+
+  .wp-element-button, .wp-block-button__link {
+    width: 100%;
+  }
+}
+
+.wp-block-media-text__media img,
+.wp-block-media-text__media video {
+  border-radius: 0.5rem;
+}
+
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .wp-block-media-text:not(.has-media-on-the-right)  .wp-block-media-text__content {
+    padding-inline-start: 80px;
+  }
+
+  .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+    padding-inline-end: 80px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .wp-block-template-part > .wp-block-group,
+  .wp-block-post-content > .wp-block-group {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
@@ -52,6 +111,18 @@ header .wp-block-navigation {
   background-repeat: no-repeat;
 }
 
+.wp-block-site-title {
+  white-space: nowrap;
+}
+
+.wp-block-loginout {
+  white-space: nowrap;
+}
+
+footer .wp-block-navigation {
+  padding:0;
+}
+
 #hero {
   background-image: url(assets/images/stars-and-lightning.svg),url(assets/images/stars-and-lightning-reversed.svg);
   background-position: left center,right center;
@@ -73,14 +144,6 @@ header .wp-block-navigation {
   border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-  .wp-block-media-text.alignwide.is-stacked-on-mobile > .wp-block-media-text__media {
-    
-    padding-left: min( 5vw, 3.75rem);
-    padding-right: min( 5vw, 3.75rem);
-  }
-}
-
 @media (min-width: 600px) {
   .wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile > .wp-block-media-text__content {
     padding-left: 0;
@@ -97,6 +160,10 @@ header .wp-block-navigation {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.wp-site-blocks > div.wp-block-template-part > div {
+  margin-bottom: 0;
 }
 
 .wp-block-cards {
