@@ -1,7 +1,7 @@
 <?php
 ?>
 <li class="wp-block-post wp-block-card post-18 pathway type-pathway status-publish has-post-thumbnail hentry collection-scratch">
-    <?php if( array_key_exists('post_thumbnail', $args) ) : ?>
+    <?php if(array_key_exists('post_thumbnail', $args)) : ?>
         <?php if( $args['post_thumbnail'] ) : ?>
             <figure class="alignwide wp-block-post-featured-image">
                 <a href="<?php echo $args['post_link'] ?>" target="_self">
